@@ -7,7 +7,8 @@ const Editor = (props) => {
     }
 
     return (
-        <div>
+        <div className="editorWrap">
+            <div class="toolbar"><i class="fa fa-free-code-camp" title="no-stack-dub-sack"></i>Editor<i class="fa fa-arrows-alt"></i></div>
             <textarea id={"editor"} value={props.text} onChange={wrapHandleChange}/>
             
         </div>

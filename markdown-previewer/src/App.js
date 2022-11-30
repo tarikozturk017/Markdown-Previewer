@@ -1,5 +1,6 @@
 import React, {useState} from "react"
 import {initialText} from "./initialText"
+import "./style.css"
 
 import Editor from "./components/Editor";
 import Preview from "./components/Preview";
@@ -13,8 +14,8 @@ function App() {
 
   return (
     <div className="App">
-      <Preview text={text}/>
       <Editor handleChange={handleChange} text={text}/>
+      <Preview text={text}/>
     </div>
   );
 }
