@@ -2,9 +2,13 @@ import React from "react"
 
 const Editor = (props) => {
 
+    function wrapHandleChange(event) {
+        props.handleChange(event)
+    }
+
     return (
         <div>
-            <textarea id={"preview"} value={props.text} onChange={() => props.handleChange()}/>
+            <textarea id={"editor"} value={props.text} onChange={wrapHandleChange}/>
             
         </div>
     )
